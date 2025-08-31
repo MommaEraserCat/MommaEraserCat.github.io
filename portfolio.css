@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'W95font';
+    src: url('w95font.woff2') format('woff2'),
+         url('w95font.woff2') format('woff');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'W95fontB';
+    src: url('w95font-bold.woff2') format('woff2'),
+         url('w95font-bold.woff2') format('woff');
+    font-weight: bold;
+}
+html {
+    font-family: 'W95font';
+    background-image: url("images/windows95background.png");
+    overflow-x: hidden;
+}
+button {
+    background-color: #b6b6b6;
+    border-style: hidden;
+    padding: 5.5px;
+}
+h1, h2, h3 {
+    margin: 4px;
+}
+h4, h6, p, small {
+    margin: 5px;
+    padding: 1px 10px;
+}
+h5 {
+    margin: 15px;
+    padding: 1px, 10px;
+}
+a {
+    font-family: 'W95font';
+    font-size: medium;
+    color: #080808;
+    display: block;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+a[href*=".html"]::first-letter {
+    text-decoration: underline;
+}
+.windowsWording {
+    margin: 2px;
+    padding: 2px;
+    float: left;
+    padding: 1px 1px;
+    color: white;
+    margin-right: auto;
+}
+.windowsButtonsDisplay {
+    float: right;
+    padding: 4px 4px;
+}
+#navigationBar {
+    text-align: left;
+    clear: both;
+    /* You got this. */
+}
+.allOfWindow {
+    border: solid;
+    border-spacing: 1px;
+    border-color: #b6b6b6;
+    border-style: ridge;
+    background-color: #b6b6b6;
+}
+.topPartOfWindow {
+    border: 5px solid #020086;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border-spacing: 2px;
+    background-color: #020086;
+}
+.topPartOfWindow > button {
+    border-style: ridge;
+    padding: 3px 7px;
+}
+.optionsOfWindow {
+    text-align: left;
+    clear: both;
+}
+.middleContentOfWindow {
+    text-align: left;
+    overflow: auto;
+    overflow-x: hidden;
+    border: 2px solid #7b7b7b;
+    border-style: ridge;
+    margin: 5px;
+}
+.bottomPartOfWindow {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5px;
+}
+.bottomSeperator {
+    border: 2px solid #7b7b7b;
+    background-color: #c1c1c1;
+}
+.bottomOfTab {
+    font-size: medium;
+    background-color: #c0c1be;
+    border: solid #c0c1be;
+    border-top-color: #fafcfc;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    margin: 0px -10px;
+}
+#buttonTabBottom1 {
+    font-family: 'W95fontB';
+    font-size: large;
+    margin: 1.5px 2px 1px;
+    border: 2px solid #000000;
+    border-left-color: #fdfdfd;
+    border-top-color: #fdfdfd;
+}
+#buttonTabBottom2 {
+    font-family: 'W95fontB';
+    font-size: large;
+    margin: 1.5px 2px 1px;
+    border: 2px solid #fdfdfd;
+    border-left-color: #000000;
+    border-top-color: #000000;
+}
+#buttonTabBottom3 {
+    font-family: 'W95font';
+    font-size: large;
+    margin-top: 3.5px;
+    margin-right: 5px;
+    border: 1px solid #fcfffe;
+    border-left-color: #7e7e7e;
+    border-top-color: #7e7e7e;
+    float: right;
+}
