@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Indie Flower';
+    src: 
+        local(Indie_Flower),
+        url(https://fonts.google.com/share?selection.family=Indie+Flower);
+}
+* {
+    background-color: beige;
+}
+html {
+    font-family: 'Indie Flower';
+}
+body {
+    border: solid;
+    border-spacing: 1px;
+}
+button, a:link, a:visited, a:hover, a:active {
+    background-color: grey;
+    color: pink;
+}
+.backgroundElement {
+    background-image: url(background.png);
+}
+.divSpecified {
+    border-bottom: solid;
+}
+.colorPlum {
+    background-color: plum;
+} /* This is mainly for the h1, h3, and h6. If you don't want to make a class object, use commas. Example: "h1, h3, h6 {...}" */
+#center {
+    text-align: center;
+}
