@@ -58,11 +58,9 @@ a[href*=".html"]::first-letter {
 #navigationBar {
     text-align: left;
     clear: both;
-    /* You got this. */
 }
 .allOfWindow {
-    border: solid;
-    border-spacing: 1px;
+    border: 3.5px outset #b6b6b6;
     border-color: #b6b6b6;
     border-style: ridge;
     background-color: #b6b6b6;
@@ -76,7 +74,7 @@ a[href*=".html"]::first-letter {
     background-color: #020086;
 }
 .topPartOfWindow > button {
-    border-style: ridge;
+    border-style: outset;
     padding: 3px 7px;
 }
 .optionsOfWindow {
@@ -84,21 +82,47 @@ a[href*=".html"]::first-letter {
     clear: both;
 }
 .middleContentOfWindow {
+    max-height: 700px;
     text-align: left;
-    overflow: auto;
+    overflow-y: auto;
     overflow-x: hidden;
     border: 2px solid #7b7b7b;
     border-style: ridge;
     margin: 5px;
+}
+#austinImage {
+    border: 2px inset #7e7e7e;
+    height: 400px;
+    width: 400px;
+    float: right;
+    margin: -145px 340px 0px 0px;
 }
 .bottomPartOfWindow {
     display: flex;
     flex-direction: row;
     margin: 0.5px;
 }
-.bottomSeperator {
-    border: 2px solid #7b7b7b;
+#bottomSeperator1 {
+    border: 2px inset #7b7b7b;
     background-color: #c1c1c1;
+    height: 19px;
+    width: 1595px;
+}
+#bottomSeperator2 {
+    border: 2px inset #7b7b7b;
+    background-color: #c1c1c1;
+    height: 19px;
+    width: 120px;
+}
+#bottomSeperator3 {
+    border: 2px inset #7b7b7b;
+    border-radius: 0 0 20px 0;
+    background-color: #c1c1c1;
+    height: 19px;
+    width: 80px;
+}
+#bottomSeperator3 > img {
+    margin: -1px -8px 1px;
 }
 .bottomOfTab {
     font-size: medium;
@@ -106,7 +130,7 @@ a[href*=".html"]::first-letter {
     border: solid #c0c1be;
     border-top-color: #fafcfc;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     margin: 0px -10px;
 }
