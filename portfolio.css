@@ -37,7 +37,7 @@ a {
     color: #080808;
     display: block;
 }
-a:link, a:visited, a:hover, a:active {
+a[href*=".html"] {
     text-decoration: none;
 }
 a[href*=".html"]::first-letter {
@@ -90,12 +90,15 @@ a[href*=".html"]::first-letter {
     border-style: ridge;
     margin: 5px;
 }
+.middleContentOfWindow a:link, a:visited {
+    text-decoration: underline;
+}
 #austinImage {
     border: 2px inset #7e7e7e;
     height: 400px;
     width: 400px;
     float: right;
-    margin: -145px 340px 0px 0px;
+    margin: 60px 250px;
 }
 .bottomPartOfWindow {
     display: flex;
@@ -158,5 +161,9 @@ a[href*=".html"]::first-letter {
     border: 1px solid #fcfffe;
     border-left-color: #7e7e7e;
     border-top-color: #7e7e7e;
+    float: right;
+}
+.time {
+    margin: 0.5px;
     float: right;
 }
